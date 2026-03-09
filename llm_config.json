@@ -1,0 +1,53 @@
+{
+  "version": "1.0",
+  "paths": {
+    "video": "video.mp4",
+    "manual_events": "manual_events.jsonl",
+    "out_dir": "out",
+    "prompts_dir": "prompts",
+    "system_prompt_file": "system_prompt_style_guide_01.txt"
+  },
+  "player_name": "シャイン",
+  "audio": {
+    "silence_head_sec": 5,
+    "loudnorm": { "i": -16, "tp": -1.0, "lra": 11 }
+  },
+  "modes": {
+    "mode": 1,
+    "gap_stall_sec_mode1": 180,
+    "gap_stall_sec_mode2": 120
+  },
+  "llm": {
+    "provider": "gemini",
+    "model": "gemini-2.5-flash",
+    "temperature": 0.4,
+    "batch_size_candidates": 30,
+    "max_retries": 3,
+    "gemini_keys_env": ["GEMINI_API_KEY_1", "GEMINI_API_KEY_2", "GEMINI_API_KEY_3"]
+  },
+  "intro": {
+    "enabled": true,
+    "part": 1,
+    "part1_lines": [
+      "今回の目的：{goal}",
+      "シャインのプレイ音声ログをもとに、AIが淡々と実況します。"
+    ],
+    "part2_lines": [
+      "今回の目的：{goal}",
+      "前回に引き続き、シャインの進行を淡々と実況します。"
+    ]
+  },
+  "fallbacks": {
+    "goal_text": "目的：進行確認"
+  },
+  "voicevox": {
+    "base_url": "http://127.0.0.1:50021",
+    "speaker_id": 2,
+    "speedScale": 0.95,
+    "volumeScale": 1.0,
+    "intonationScale": 0.3
+  },
+  "policy": {
+    "no_overlap": { "gap_sec": 0.5, "drop_if_late_sec": 30 }
+  }
+}

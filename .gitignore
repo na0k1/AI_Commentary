@@ -1,0 +1,57 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Virtual env
+.venv/
+venv/
+env/
+
+# Secrets
+.env
+.env.*
+!.env.example
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Build / temp
+tmp/
+temp/
+*.log
+
+# Project outputs
+out/
+dist/
+build/
+
+# Media / local artifacts
+*.wav
+*.mp3
+*.flac
+*.aac
+*.m4a
+*.ogg
+*.mp4
+*.mov
+*.mkv
+*.avi
+
+# Large local assets
+video.mp4
+mic.wav
+
+# Optional local notes
+*.bak
+*.tmp
