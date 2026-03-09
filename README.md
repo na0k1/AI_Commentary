@@ -148,3 +148,7 @@ python -m scripts.mix_audio_from_events --config .\llm_config.json
 * `.env` は絶対にコミットしない
 * `video.mp4` など大きいローカル素材もコミットしない
 * Notion は設計・運用メモ、GitHub はコードの正本として扱う
+
+## License
+
+This project is licensed under the MIT License. See the `LICENSE` file for details.
