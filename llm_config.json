@@ -9,7 +9,7 @@
   },
   "player_name": "シャイン",
   "audio": {
-    "silence_head_sec": 5,
+    "silence_head_sec": 2.5,
     "loudnorm": { "i": -16, "tp": -1.0, "lra": 11 }
   },
   "modes": {

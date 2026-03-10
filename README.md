@@ -93,6 +93,37 @@ python .\scripts\run_all.py
 
 ## よく使う個別実行
 
+## 途中再開
+
+### 利用できるステップ名を表示
+```powershell
+python .\scripts\run_all.py --list-steps
+````
+
+### 途中から再開
+
+例：VOICEVOX以降だけ再開する
+
+```powershell
+python .\scripts\run_all.py --from voicevox_batch_generate
+```
+
+### 1ステップだけ実行
+
+例：chapters だけ作り直す
+
+```powershell
+python .\scripts\run_all.py --only make_chapters
+```
+
+### LLM生成を強制作り直し
+
+既存の `out/event_table_raw/` を上書きして再生成したい場合
+
+```powershell
+python .\scripts\run_all.py --from generate_event_table --force-llm
+```
+
 ### LLM生成だけやり直す
 
 ```powershell

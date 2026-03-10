@@ -23,13 +23,6 @@ def fill_template(template: str, mapping: dict) -> str:
     return out
 
 
-def render_manual_block(root: Path, cfg: dict) -> str:
-    p = root / cfg["paths"]["manual_events"]
-    if not p.exists():
-        return ""
-    return p.read_text(encoding="utf-8").strip()
-
-
 def build_whisper_block(candidates: list[dict]) -> str:
     # candidates already have "context", and they are "no-vision"
     lines = []
