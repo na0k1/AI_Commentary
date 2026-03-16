@@ -1,4 +1,5 @@
-# AI Commentary Pipeline for Shinelll
+# (freeze) AI Commentary Pipeline for Shinelll
+※もう使わないので凍結します。
 
 人間プレイ × AI後付け実況 用のローカルパイプラインです。  
 ゲーム録画ファイルから、以下を自動生成します。
